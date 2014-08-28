@@ -1,5 +1,4 @@
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -27,6 +26,15 @@ public class LychrelTest {
         isPalindrome(11);
         isPalindrome(121);
         isPalindrome(123454321);
+    }
+
+    @Test
+    public void notPalindromes() {
+        isNotPalindrome(12);
+    }
+
+    private void isNotPalindrome(int n) {
+        assertFalse(lychrel.isPalindrome(n));
     }
 
     private void isPalindrome(int n) {
