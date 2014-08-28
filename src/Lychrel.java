@@ -5,4 +5,8 @@ public class Lychrel {
     public int determineIteration(int n) {
         return 0;
     }
+
+    public boolean isPalindrome(int n) {
+        return false;
+    }
 }
