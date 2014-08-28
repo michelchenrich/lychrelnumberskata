@@ -7,6 +7,8 @@ public class Lychrel {
     }
 
     public boolean isPalindrome(int n) {
-        return true;
+        char[] digits = Integer.toString(n).toCharArray();
+
+        return digits[0] == digits[digits.length - 1];
     }
 }
