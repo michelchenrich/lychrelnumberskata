@@ -1,7 +1,7 @@
-import jdk.nashorn.internal.ir.annotations.Ignore;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class LychrelTest {
@@ -26,6 +26,7 @@ public class LychrelTest {
         isPalindrome(0);
         isPalindrome(11);
         isPalindrome(121);
+        isPalindrome(123454321);
     }
 
     private void isPalindrome(int n) {
