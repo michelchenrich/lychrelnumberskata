@@ -32,6 +32,7 @@ public class LychrelTest {
     public void notPalindromes() {
         isNotPalindrome(12);
         isNotPalindrome(1231);
+        isNotPalindrome(1234564321);
     }
 
     private void isNotPalindrome(int n) {
