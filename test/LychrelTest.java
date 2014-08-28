@@ -1,6 +1,5 @@
 import static org.junit.Assert.*;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 
 public class LychrelTest {
@@ -12,7 +11,6 @@ public class LychrelTest {
         lychrel = new Lychrel(LIMIT);
     }
 
-    @Ignore
     @Test
     public void facts() {
         isPalindromAtIteration(0, 0);
