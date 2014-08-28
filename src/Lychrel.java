@@ -7,6 +7,6 @@ public class Lychrel {
     }
 
     public boolean isPalindrome(int n) {
-        return false;
+        return true;
     }
 }
