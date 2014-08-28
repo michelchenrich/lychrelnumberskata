@@ -7,6 +7,7 @@ public class LychrelTest {
     @Test
     public void facts() {
         isPalindromAtIteration(0, 0);
+        isPalindromAtIteration(11, 0);
     }
 
     private void isPalindromAtIteration(int n, int iteration) {
