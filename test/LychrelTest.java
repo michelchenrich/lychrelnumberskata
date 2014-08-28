@@ -8,6 +8,7 @@ public class LychrelTest {
     public void facts() {
         isPalindromAtIteration(0, 0);
         isPalindromAtIteration(11, 0);
+        isPalindromAtIteration(56, 1);
     }
 
     private void isPalindromAtIteration(int n, int iteration) {
