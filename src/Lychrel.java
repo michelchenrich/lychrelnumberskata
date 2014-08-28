@@ -3,6 +3,6 @@ public class Lychrel {
     }
 
     public int determineIteration(int n) {
-        return -1;
+        return 0;
     }
 }
