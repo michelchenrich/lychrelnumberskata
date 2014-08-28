@@ -24,6 +24,7 @@ public class LychrelTest {
     @Test
     public void palindromes() {
         isPalindrome(0);
+        isPalindrome(11);
     }
 
     private void isPalindrome(int n) {
