@@ -17,4 +17,8 @@ public class Lychrel {
 
         return true;
     }
+
+    public int reverse(int n) {
+        return 0;
+    }
 }

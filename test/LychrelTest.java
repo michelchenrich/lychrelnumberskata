@@ -1,5 +1,6 @@
 import static org.junit.Assert.*;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class LychrelTest {
@@ -11,12 +12,22 @@ public class LychrelTest {
         lychrel = new Lychrel(LIMIT);
     }
 
+    @Ignore
     @Test
     public void facts() {
         isPalindromAtIteration(0, 0);
         isPalindromAtIteration(11, 0);
         isPalindromAtIteration(56, 1);
         isPalindromAtIteration(57, 2);
+    }
+
+    @Test
+    public void reversed() {
+        isRevered(12, 21);
+    }
+
+    private void isRevered(int n, int r) {
+        assertEquals(r, lychrel.reverse(n));
     }
 
     @Test
