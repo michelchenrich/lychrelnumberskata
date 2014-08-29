@@ -11,12 +11,12 @@ public class Lychrel {
         return determineIteration(BigInteger.valueOf(n), 0);
     }
 
-    public int determineIteration(BigInteger n, int iteration) {
+    private int determineIteration(BigInteger n, int iteration) {
         if (isPalindrome(n) || iteration == limit) return iteration;
         else return determineIteration(n.add(reverse(n)), iteration + 1);
     }
 
-    public boolean isPalindrome(BigInteger n) {
+    private boolean isPalindrome(BigInteger n) {
         char[] digits = n.toString().toCharArray();
 
         int lastIndex = digits.length - 1;
@@ -27,7 +27,7 @@ public class Lychrel {
         return true;
     }
 
-    public BigInteger reverse(BigInteger n) {
+    private BigInteger reverse(BigInteger n) {
         char[] digits = n.toString().toCharArray();
         char[] reversedDigits = new char[digits.length];
 
