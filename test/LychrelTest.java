@@ -25,6 +25,7 @@ public class LychrelTest {
     public void reversed() {
         isRevered(12, 21);
         isRevered(1234, 4321);
+        isRevered(1234567, 7654321);
     }
 
     private void isRevered(int n, int r) {
