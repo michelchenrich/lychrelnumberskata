@@ -1,16 +1,19 @@
 import java.math.BigInteger;
 
 public class Lychrel {
+    private final int limit;
+
     public Lychrel(int limit) {
+        this.limit = limit;
     }
 
     public int determineIteration(long n) {
-        return determineIteration(BigInteger.valueOf(n));
+        return determineIteration(BigInteger.valueOf(n), 0);
     }
 
-    public int determineIteration(BigInteger n) {
-        if (isPalindrome(n)) return 0;
-        else return 1 + determineIteration(n.add(reverse(n)));
+    public int determineIteration(BigInteger n, int iteration) {
+        if (isPalindrome(n) || iteration == limit) return iteration;
+        else return determineIteration(n.add(reverse(n)), iteration + 1);
     }
 
     public boolean isPalindrome(BigInteger n) {
