@@ -4,7 +4,11 @@ public class Lychrel {
 
     public int determineIteration(int n) {
         if (isPalindrome(n)) return 0;
-        return 1;
+        else {
+            if (isPalindrome(n + reverse(n)))
+                return 1;
+            return 2;
+        }
     }
 
     public boolean isPalindrome(int n) {
