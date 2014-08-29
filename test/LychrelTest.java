@@ -20,7 +20,11 @@ public class LychrelTest {
         isPalindromAtIteration(59, 3);
         isPalindromAtIteration(89, 24);
         isPalindromAtIteration(10911, 55);
-        isPalindromAtIteration(196, LIMIT);
+        isCandidate(196);
+    }
+
+    private void isCandidate(int n) {
+        isPalindromAtIteration(n, LIMIT);
     }
 
     private void isPalindromAtIteration(int n, int iteration) {
