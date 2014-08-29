@@ -17,14 +17,7 @@ public class Lychrel {
     }
 
     private boolean isPalindrome(BigInteger n) {
-        char[] digits = n.toString().toCharArray();
-
-        int lastIndex = digits.length - 1;
-        for (int i = 0; i < digits.length; i++)
-            if (digits[i] != digits[lastIndex - i])
-                return false;
-
-        return true;
+        return n.equals(reverse(n));
     }
 
     private BigInteger reverse(BigInteger n) {
