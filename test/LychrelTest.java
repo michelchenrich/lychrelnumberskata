@@ -2,6 +2,8 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.math.BigInteger;
+
 public class LychrelTest {
     private static final int LIMIT = 1000;
     private Lychrel lychrel;
@@ -29,7 +31,7 @@ public class LychrelTest {
     }
 
     private void isRevered(int n, int r) {
-        assertEquals(r, lychrel.reverse(n));
+        assertEquals(BigInteger.valueOf(r), lychrel.reverse(BigInteger.valueOf(n)));
     }
 
     @Test
@@ -48,11 +50,11 @@ public class LychrelTest {
     }
 
     private void isNotPalindrome(int n) {
-        assertFalse(lychrel.isPalindrome(n));
+        assertFalse(lychrel.isPalindrome(BigInteger.valueOf(n)));
     }
 
     private void isPalindrome(int n) {
-        assertTrue(lychrel.isPalindrome(n));
+        assertTrue(lychrel.isPalindrome(BigInteger.valueOf(n)));
     }
 
     private void isPalindromAtIteration(int n, int iteration) {
