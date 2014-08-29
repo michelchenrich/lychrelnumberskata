@@ -22,6 +22,7 @@ public class LychrelTest {
         isPalindromAtIteration(59, 3);
         isPalindromAtIteration(89, 24);
         isPalindromAtIteration(10911, 55);
+        isPalindromAtIteration(196, LIMIT);
     }
 
     @Test
