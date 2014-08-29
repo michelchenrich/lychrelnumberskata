@@ -1,3 +1,5 @@
+import java.math.BigInteger;
+
 public class Lychrel {
     public Lychrel(int limit) {
     }
@@ -8,7 +10,11 @@ public class Lychrel {
     }
 
     public boolean isPalindrome(int n) {
-        char[] digits = Integer.toString(n).toCharArray();
+        return isPalindrome(BigInteger.valueOf(n));
+    }
+
+    public boolean isPalindrome(BigInteger n) {
+        char[] digits = n.toString().toCharArray();
 
         int lastIndex = digits.length - 1;
         for (int i = 0; i < digits.length; i++)
