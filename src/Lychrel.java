@@ -19,6 +19,13 @@ public class Lychrel {
     }
 
     public int reverse(int n) {
-        return 21;
+        char[] digits = Integer.toString(n).toCharArray();
+        char[] reversedDigits = new char[digits.length];
+
+        int lastIndex = digits.length - 1;
+        for (int i = 0; i < digits.length; i++)
+            reversedDigits[lastIndex - i] = digits[i];
+
+        return Integer.parseInt(new String(reversedDigits));
     }
 }
